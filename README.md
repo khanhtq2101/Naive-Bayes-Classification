@@ -12,8 +12,15 @@ We also provide a demonstrated jupyter notebook, which you can follow as a sampl
 ## 3. Funtions
 In this section, we describe some main function of our implementation, both model for categorical and numerical data share this API. 
 Since the API follows scikit-learn library, it is composed of two main funciton **fit**(X, y) and **predict**(X).  
-- **fit**(X, y):   
+- **fit**(X, y): Fit model according to X, y.  
+  Parameters:  
+     &ensp; X: array of shape (n_samples, n_features)  
+     &ensp; y: array of shape (n_samples, )  
 - **predict**(X):
+  Parameters:  
+  &ensp; X: array of shape (n_samples, n_features)  
+  Return:  
+  &ensp; C: array of shape (n_samples, ) prediction for X
 ## 4. Experiments and results
 As mentioned above, we provide a demonstrated jupyter notebook as a sample and it is also our experimental execution.  
 To evaluate, Naive Bayes of scikit-learn was used as standard. The evaluation was done under three popular dataset, 
